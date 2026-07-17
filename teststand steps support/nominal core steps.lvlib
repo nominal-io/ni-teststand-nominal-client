@@ -22,6 +22,17 @@
 		<Item Name="create stream from dataset.vi" Type="VI" URL="../create stream from dataset.vi"/>
 		<Item Name="get dataset by rid.vi" Type="VI" URL="../get dataset by rid.vi"/>
 	</Item>
+	<Item Name="runs and events" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="create event from run.vi" Type="VI" URL="../create event from run.vi"/>
+		<Item Name="create event from asset.vi" Type="VI" URL="../create event from asset.vi"/>
+		<Item Name="update event metadata.vi" Type="VI" URL="../update event metadata.vi"/>
+		<Item Name="create run.vi" Type="VI" URL="../create run.vi"/>
+		<Item Name="create run for specific asset.vi" Type="VI" URL="../create run for specific asset.vi"/>
+		<Item Name="update run start time.vi" Type="VI" URL="../update run start time.vi"/>
+		<Item Name="update run end time.vi" Type="VI" URL="../update run end time.vi"/>
+		<Item Name="update run metadata.vi" Type="VI" URL="../update run metadata.vi"/>
+	</Item>
 	<Item Name="stream" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="batch buffer" Type="Folder">
