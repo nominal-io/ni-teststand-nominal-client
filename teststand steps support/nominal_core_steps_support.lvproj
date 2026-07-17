@@ -23,7 +23,7 @@
 				<Property Name="Bld_buildSpecName" Type="Str">NominalCoreSteps(64)</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/Documents/National Instruments/TestStand 2026 (64-bit)/Components/StepTypes/nominal_core_steps</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7E1FB6E0-09C7-44DA-AA00-43833326CE17}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NominalCoreSteps.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/TestStand 2026 (64-bit)/Components/StepTypes/nominal_core_steps/NominalCoreSteps.lvlibp</Property>

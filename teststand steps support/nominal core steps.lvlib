@@ -29,6 +29,7 @@
 		<Item Name="update event metadata.vi" Type="VI" URL="../update event metadata.vi"/>
 		<Item Name="create run.vi" Type="VI" URL="../create run.vi"/>
 		<Item Name="create run for specific asset.vi" Type="VI" URL="../create run for specific asset.vi"/>
+		<Item Name="update event timing.vi" Type="VI" URL="../update event timing.vi"/>
 		<Item Name="update run start time.vi" Type="VI" URL="../update run start time.vi"/>
 		<Item Name="update run end time.vi" Type="VI" URL="../update run end time.vi"/>
 		<Item Name="update run metadata.vi" Type="VI" URL="../update run metadata.vi"/>
