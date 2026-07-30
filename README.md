@@ -76,11 +76,17 @@ If you have a native LabVIEW® time stamp when you acquire your data and need pr
 
 #### Configuration
 Once installed to the TestStand® public directory and the application is reloaded, the plugin should appear as a normal result plugin under Configure >> Result Processing...
+
 <img width="303" height="348" alt="image" src="https://github.com/user-attachments/assets/04a58195-1a9c-4da6-b213-7e038eff85f8" />
+
 Press the `>` (Insert New) button and add the Nominal Core Result Streamer:
+
 <img width="511" height="224" alt="image" src="https://github.com/user-attachments/assets/6ba50b09-b787-4145-9684-07e7b12cef49" />
+
 Finally, hit the configuration gear to configure the addon. All three modes require an API key, but the additional data required depends on the Mode:
+
 <img width="904" height="687" alt="image" src="https://github.com/user-attachments/assets/6f3721a7-3f0a-4a72-9475-524b432715c5" />
+
 The dialog should provide a description of the behavior which is replicated here:
 * `direct to dataset` - "All results are streamed directly to a dataset which you have pre-configured within Nominal Core to be bound to an asset or set of assets"
 * `stream to asset` - "Uses an asset RID to find an asset in Nominal. If a dataset *name* is specified, it will be used; otherwise, the asset RID will be reused as the *name* of the dataset. The model steps will automatically locate or create that dataset by *name* and then associate a stream with it. The code will also generate a Run object for the asset for every "UUT" tested in TestStand®."
@@ -89,7 +95,7 @@ The dialog should provide a description of the behavior which is replicated here
 #### Example
 The below example images show a valid usage of the report generation functionality. First, in a step that is operating on several values:
 <img width="2234" height="433" alt="image" src="https://github.com/user-attachments/assets/7d40d166-f621-45a8-bdc7-647d65ff0996" />
-Note in this example each of the timestamp suffixes is used and each of the three main time formats are used.
+Note in this example each of the timestamp suffixes is used and each of the three main time formats are used. The offsets hardcoded in the image above are purely for verification purposes, to ensure the times are being handled as expected.
 
 Later, the sequence stores another set of additional results. By using different names, they are stored in different channels:
 <img width="1136" height="476" alt="image" src="https://github.com/user-attachments/assets/98382a40-0d61-4075-a15f-8f5058186e9b" />
