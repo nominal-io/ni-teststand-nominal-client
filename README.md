@@ -1,8 +1,11 @@
-# ni-teststand-nominal-client
+# NI TestStand® Integration for Nominal Core
 Provides two integration options for using Nominal in NI TestStand®:
 
  * Test steps which wrap the LabVIEW® nominal client, making integration of test results from NI TestStand® into nominal core easier.
  * A report model plugin which allows users to automatically log `Additional Results` to Nominal Core.
+
+## Install
+Download a release from the sidebar or clone this repo and move the contents of the zip or the contents of the folder `teststand public directory` to the TestStand® public directory. For the 2026/64-bit version of LabVIEW®, this should be `C:\Users\Public\Documents\National Instruments\TestStand 2026 (64-bit)`. Refer to product documentation for any deviations from that path.
 
 ## Dependencies
 The steps and model plugin depend on this VIPM package in order to build:
@@ -59,8 +62,41 @@ The sequence `example nominal core sequence.seq` is the easiest way to get a fee
 
 
 ### Report Model Plugin
+The report plugin is designed to accept single point values as additional results. Other data types (such as waveforms) are straightforward to support but the alpha release does not support anything other than single-point numeric properties. The theory of operation for this plugin is to look through every `Additional Result` value, identify numerics, and push those to Nominal using the user-specified result name as the channel name. That is, you can specify an Additional Result as having the name "station_psu_voltage" anywhere from 1 to N times through the run of your test sequence and every value will be stored in the same channel in Nominal. 
 
 
+#### Accurate TimeStamps
+By default, the timestamp used is the timestamp of the step itself. Since this is imprecise (especially for longer-running steps), you can override this by producing a second result with any of the following suffixes: `_ts`, `_time`, or `_timestamp`. That is, station_psu_voltage_ts or station_psu_voltage_time or station_psu_voltage_timestamp, stored in the same `Additional Results` record, will be used if present. The timestamp format can be either numeric or string:
+* If string, it expects the standard format used by TestStand® for timestamps and returned by the `Date()` and `Time()` functions but will permit either date-first or time-first so both "12:07:19 PM 7/30/2026" and "7/30/2026 12:07:19 PM" will work fine
+* If numeric, the matching is more complex due to how TestStand® handles time:
+  * Test step timestamps are recorded using the built-in function `Seconds(True)` which returns `Engine.SecondsSinceStart` -- this is the current time minus the time the engine started. If a numeric value with one of the timestamp suffixes has a value between 0 (seconds since the start of the engine) and the current value of `Engine.SecondsSinceStart`, the report generation will assume the timestamp is in this format. To convert, the code will sum the value with `Engine.SecondsAtStartIn1970UniversalCoordinatedTime` and then convert between the 1970 epoch and the LabVIEW® 1904 epoch to determine the correct time in the native LabVIEW® data format.
+  * The code next attempts to fix the timestamp within the TestStand®-native epoch. If the time value stored is between `Engine.SecondsAtStartIn1970UniversalCoordinatedTime` and `Seconds(False)` [the absolute number of seconds that have elapsed between the 1970 epoch and the current time], the code will assume that the time value stored is in the 1970 epoch and will directly convert to the 1904 epoch used by LabVIEW®.
+  * If both of the above range checks fail, the code assumes the time value is already in the native LabVIEW® format (since Today-1904 >>> Today-1970) and will simply use the primitive `[Number] To Time Stamp`.
+If you have a native LabVIEW® time stamp when you acquire your data and need precision, the best approach is to use the native timestamp<>string functionality.
+
+#### Configuration
+Once installed to the TestStand® public directory and the application is reloaded, the plugin should appear as a normal result plugin under Configure >> Result Processing...
+<img width="303" height="348" alt="image" src="https://github.com/user-attachments/assets/04a58195-1a9c-4da6-b213-7e038eff85f8" />
+Press the `>` (Insert New) button and add the Nominal Core Result Streamer:
+<img width="511" height="224" alt="image" src="https://github.com/user-attachments/assets/6ba50b09-b787-4145-9684-07e7b12cef49" />
+Finally, hit the configuration gear to configure the addon. All three modes require an API key, but the additional data required depends on the Mode:
+<img width="904" height="687" alt="image" src="https://github.com/user-attachments/assets/6f3721a7-3f0a-4a72-9475-524b432715c5" />
+The dialog should provide a description of the behavior which is replicated here:
+* `direct to dataset` - "All results are streamed directly to a dataset which you have pre-configured within Nominal Core to be bound to an asset or set of assets"
+* `stream to asset` - "Uses an asset RID to find an asset in Nominal. If a dataset *name* is specified, it will be used; otherwise, the asset RID will be reused as the *name* of the dataset. The model steps will automatically locate or create that dataset by *name* and then associate a stream with it. The code will also generate a Run object for the asset for every "UUT" tested in TestStand®."
+* `generate asset per test` - "Creates an asset for each UUT by concatenating the prefix specified here with the UUT serial number. Then a dataset called "TestStand" will be generated and a run will be generated on the new asset. Each UUT will have its own asset, dataset, and stream."
+
+#### Example
+The below example images show a valid usage of the report generation functionality. First, in a step that is operating on several values:
+<img width="2234" height="433" alt="image" src="https://github.com/user-attachments/assets/7d40d166-f621-45a8-bdc7-647d65ff0996" />
+Note in this example each of the timestamp suffixes is used and each of the three main time formats are used.
+
+Later, the sequence stores another set of additional results. By using different names, they are stored in different channels:
+<img width="1136" height="476" alt="image" src="https://github.com/user-attachments/assets/98382a40-0d61-4075-a15f-8f5058186e9b" />
+For this result, the timestamp used will be the native step timestamp.
+
+To store those results under the original channel names, the result names would need to match as shown here:
+<img width="1086" height="405" alt="image" src="https://github.com/user-attachments/assets/73966a93-d269-4ddd-b929-f0844b125cdd" />
 
 
 
