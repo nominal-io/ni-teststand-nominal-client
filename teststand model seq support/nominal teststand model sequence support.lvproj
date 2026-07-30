@@ -25,7 +25,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B4AEA375-E4A5-4238-91DF-2ABA7A4C1A96}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">11</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">nominal teststand model sequence support.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../teststand public directory/Components/Models/ModelPlugins/nominal/NI_AB_PROJECTNAME.lvlibp</Property>
