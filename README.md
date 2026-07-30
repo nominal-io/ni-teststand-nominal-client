@@ -102,4 +102,9 @@ The different approaches can be seen in `example nominal reporting sequence.seq`
 <img width="2193" height="1161" alt="image" src="https://github.com/user-attachments/assets/5707f403-2afe-4797-bad5-e58896d33a5a" />
 Note that the third waveform is expected due to the low time resolution used on that segment's time source
 
+
+
+
+------
+
 NI® (National Instruments®), NI TestStand®, and NI LabVIEW® are registered trademarks of NI®. All other trademarks are the property of their respective owners.
