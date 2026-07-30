@@ -98,6 +98,8 @@ For this result, the timestamp used will be the native step timestamp.
 To store those results under the original channel names, the result names would need to match as shown here:
 <img width="1086" height="405" alt="image" src="https://github.com/user-attachments/assets/73966a93-d269-4ddd-b929-f0844b125cdd" />
 
-
+The different approaches can be seen in `example nominal reporting sequence.seq` in this repository. If you have configured the plugin appropriately you should see:
+<img width="2193" height="1161" alt="image" src="https://github.com/user-attachments/assets/5707f403-2afe-4797-bad5-e58896d33a5a" />
+Note that the third waveform is expected due to the low time resolution used on that segment's time source
 
 NI® (National Instruments®), NI TestStand®, and NI LabVIEW® are registered trademarks of NI®. All other trademarks are the property of their respective owners.
