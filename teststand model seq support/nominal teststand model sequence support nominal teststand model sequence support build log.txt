@@ -1,0 +1,1852 @@
+7/30/2026 2:19:06 PM
+
+[AB_L New Build](0.046)(360448):
+Project:nominal teststand model sequence support.lvproj
+Target:My Computer
+BuildSpec:nominal teststand model sequence support
+OS:Windows x64
+LabVIEW Version: 26.1.2f2
+
+[AB_L ProjectFileData](0.057)(360448):
+NOTE:This data will be stale if the build spec has been modified and the project file has not been saved!
+
+<Item Name="nominal teststand model sequence support" Type="Packed Library">
+<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+<Property Name="Bld_buildCacheID" Type="Str">{B78C4BC7-DBA2-415C-BAE9-C3B02381B048}</Property>
+<Property Name="Bld_buildSpecName" Type="Str">nominal teststand model sequence support</Property>
+<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+<Property Name="Bld_localDestDir" Type="Path">../teststand public directory/Components/Models/ModelPlugins/nominal</Property>
+<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+<Property Name="Bld_previewCacheID" Type="Str">{B4AEA375-E4A5-4238-91DF-2ABA7A4C1A96}</Property>
+<Property Name="Bld_version.build" Type="Int">9</Property>
+<Property Name="Bld_version.major" Type="Int">1</Property>
+<Property Name="Destination[0].destName" Type="Str">nominal teststand model sequence support.lvlibp</Property>
+<Property Name="Destination[0].path" Type="Path">../teststand public directory/Components/Models/ModelPlugins/nominal/NI_AB_PROJECTNAME.lvlibp</Property>
+<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+<Property Name="Destination[0].type" Type="Str">App</Property>
+<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+<Property Name="Destination[1].path" Type="Path">../teststand public directory/Components/Models/ModelPlugins/nominal</Property>
+<Property Name="DestinationCount" Type="Int">2</Property>
+<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
+<Property Name="Source[0].itemID" Type="Str">{3378AFE3-BFB5-43E2-BD64-2DB5A8BC2DD5}</Property>
+<Property Name="Source[0].type" Type="Str">Container</Property>
+<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+<Property Name="Source[1].itemID" Type="Ref">/My Computer/nominal teststand model sequence support.lvlib</Property>
+<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+<Property Name="Source[1].type" Type="Str">Library</Property>
+<Property Name="SourceCount" Type="Int">2</Property>
+<Property Name="TgtF_companyName" Type="Str">Nominal Inc</Property>
+<Property Name="TgtF_fileDescription" Type="Str">nominal teststand model sequence support</Property>
+<Property Name="TgtF_internalName" Type="Str">nominal teststand model sequence support</Property>
+<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 Nominal Inc</Property>
+<Property Name="TgtF_productName" Type="Str">nominal teststand model sequence support</Property>
+<Property Name="TgtF_targetfileGUID" Type="Str">{746F3536-404E-48D9-A617-F96401CE4AE6}</Property>
+<Property Name="TgtF_targetfileName" Type="Str">nominal teststand model sequence support.lvlibp</Property>
+<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+</Item>
+
+[AB_L Before Build Class Data](0.140)(360448):
+buildSpecName:nominal teststand model sequence support
+linkerOption:English
+defaultLanguage:English
+supportedLanguages:[]
+excludedDirectories:[]
+buildContext:11993085949421551616
+buildObject:1521058099056
+preview:FALSE
+targetfileName:nominal teststand model sequence support.lvlibp
+enableDebugging:FALSE
+
+
+Source[0] (Container)
+path:
+itemID:{2AD823FA-8083-4664-AB7F-61831BD19E81}
+containerIndex:-1
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:
+preventRename:FALSE
+applyInclusion:FALSE
+applyDestination:FALSE
+applyProperties:FALSE
+applyPassword:FALSE
+applyPrefix:FALSE
+
+Source[1] (Library)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+itemID:{23B22FBC-F98D-4768-B8C1-2A6B083F8D87}
+containerIndex:-1
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib
+preventRename:TRUE
+relinkCallers:FALSE
+atomicCopy:TRUE
+allowMissingMembers:TRUE
+eng_newDelimitedName:
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[2] (Container)
+path:
+itemID:{51C061AF-1CCD-4A76-A217-48D18D4DE805}
+containerIndex:1
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:
+preventRename:FALSE
+applyInclusion:FALSE
+applyDestination:FALSE
+applyProperties:FALSE
+applyPassword:FALSE
+applyPrefix:FALSE
+
+Source[3] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+itemID:{E2D39792-F719-4F85-B64B-8630E015ACD1}
+containerIndex:1
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand convert results.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[4] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+itemID:{4FBA6A4D-A8F6-4E0F-B4CD-4D7575C5948C}
+containerIndex:1
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand model options dialog.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[5] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+itemID:{F4F67CA2-8256-4D27-AB9B-336E29A5C277}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as numbers.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[6] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+itemID:{E1377954-9932-4162-8EFA-4EBDF66FAD15}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as strings.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[7] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+itemID:{DAC164EE-E396-4892-AC9D-E69DBAA4218C}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[8] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+itemID:{80D98A08-8A44-4C29-AD79-26072DFB3A93}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:recurse property bag for specific properties.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[9] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+itemID:{6DECEA1B-D028-4783-B1AC-E172061B1AE2}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:try to parse timestamp string.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[10] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+itemID:{6CAAFBD5-4515-48FF-B69B-FD1F4AA3F923}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal numeric result collection.ctl
+preventRename:FALSE
+standardVI:FALSE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[11] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+itemID:{DC79A887-5E76-4006-82D7-EE7B3634693E}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:teststand epoch.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[12] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+itemID:{7C6CB7BF-3300-4573-8B98-1ABE08BAAA5C}
+containerIndex:2
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal convert results recursor.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+
+Destination[0]
+destName:nominal teststand model sequence support.lvlibp
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+libraryName:
+preserveHierarchy:TRUE
+eng_inBuild:FALSE
+eng_libraryReference:0
+
+Destination[1]
+destName:Support Directory
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:FALSE
+eng_libraryReference:0
+
+[AB_L Applied Container Class Data](0.141)(360448):
+buildSpecName:nominal teststand model sequence support
+linkerOption:English
+defaultLanguage:English
+supportedLanguages:[]
+excludedDirectories:[]
+buildContext:11993085949421551616
+buildObject:1521058099056
+preview:FALSE
+targetfileName:nominal teststand model sequence support.lvlibp
+enableDebugging:FALSE
+
+
+Source[0] (Container)
+path:
+itemID:{2AD823FA-8083-4664-AB7F-61831BD19E81}
+containerIndex:-1
+sourceInclusion:IncludeIfReferenced
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:
+preventRename:FALSE
+applyInclusion:FALSE
+applyDestination:FALSE
+applyProperties:FALSE
+applyPassword:FALSE
+applyPrefix:FALSE
+
+Source[1] (Library)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+itemID:{23B22FBC-F98D-4768-B8C1-2A6B083F8D87}
+containerIndex:-1
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:nominal teststand model sequence support.lvlib
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib
+preventRename:TRUE
+relinkCallers:FALSE
+atomicCopy:TRUE
+allowMissingMembers:TRUE
+eng_newDelimitedName:nominal teststand model sequence support.lvlib
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[2] (Container)
+path:
+itemID:{51C061AF-1CCD-4A76-A217-48D18D4DE805}
+containerIndex:1
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:
+preventRename:FALSE
+applyInclusion:FALSE
+applyDestination:FALSE
+applyProperties:FALSE
+applyPassword:FALSE
+applyPrefix:FALSE
+
+Source[3] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+itemID:{E2D39792-F719-4F85-B64B-8630E015ACD1}
+containerIndex:1
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:nominal teststand convert results.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand convert results.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[4] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+itemID:{4FBA6A4D-A8F6-4E0F-B4CD-4D7575C5948C}
+containerIndex:1
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:nominal teststand model options dialog.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand model options dialog.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[5] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+itemID:{F4F67CA2-8256-4D27-AB9B-336E29A5C277}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:filter possible timestamps stored as numbers.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as numbers.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[6] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+itemID:{E1377954-9932-4162-8EFA-4EBDF66FAD15}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:filter possible timestamps stored as strings.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as strings.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[7] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+itemID:{DAC164EE-E396-4892-AC9D-E69DBAA4218C}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:filter possible timestamps.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[8] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+itemID:{80D98A08-8A44-4C29-AD79-26072DFB3A93}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:recurse property bag for specific properties.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:recurse property bag for specific properties.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[9] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+itemID:{6DECEA1B-D028-4783-B1AC-E172061B1AE2}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:try to parse timestamp string.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:try to parse timestamp string.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[10] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+itemID:{6CAAFBD5-4515-48FF-B69B-FD1F4AA3F923}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:nominal numeric result collection.ctl
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal numeric result collection.ctl
+preventRename:FALSE
+standardVI:FALSE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[11] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+itemID:{DC79A887-5E76-4006-82D7-EE7B3634693E}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:teststand epoch.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:teststand epoch.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+Source[12] (VI)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+itemID:{7C6CB7BF-3300-4573-8B98-1ABE08BAAA5C}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:-1
+properties:[]
+newName:nominal convert results recursor.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:FALSE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal convert results recursor.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0
+
+
+Destination[0]
+destName:nominal teststand model sequence support.lvlibp
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+libraryName:
+preserveHierarchy:TRUE
+eng_inBuild:FALSE
+eng_libraryReference:0
+
+Destination[1]
+destName:Support Directory
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:FALSE
+eng_libraryReference:0
+
+[AB_L Check NoOp](0.149)(360448):
+
+[AB_L Opened TopLevel](0.357)(360704):
+
+[AB_L Linker Info](0.362)(360704):
+LinksToInclude:Exclusions -
+Edit time Dep: 1
+Typedefs: 0
+Poly VIs: 1
+Unsed lib items:1
+TopLevelPaths:
+C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+
+
+[AB_L Post Linker](0.372)(360704):
+
+[AB_L Linker Items](0.374)(360704):
+
+LinkerItem[0] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+delimted name:nominal teststand model sequence support.lvlib
+type:Library
+buttons:0
+viflags2:0
+links:[]
+linker inclusion:include
+ClassData:(Library)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+itemID:{23B22FBC-F98D-4768-B8C1-2A6B083F8D87}
+containerIndex:-1
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[Remove front panel=FALSE
+]
+newName:nominal teststand model sequence support.lvlib
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib
+preventRename:TRUE
+relinkCallers:FALSE
+atomicCopy:TRUE
+allowMissingMembers:TRUE
+eng_newDelimitedName:nominal teststand model sequence support.lvlib
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[1] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+delimted name:nominal teststand model sequence support.lvlib:nominal teststand convert results.vi
+type:Instrument
+buttons:0
+viflags2:0
+links:[0,8,9,6,10,5]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+itemID:{E2D39792-F719-4F85-B64B-8630E015ACD1}
+containerIndex:1
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:nominal teststand convert results.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand convert results.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[2] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+delimted name:nominal teststand model sequence support.lvlib:nominal teststand model options dialog.vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[0,11,15]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+itemID:{4FBA6A4D-A8F6-4E0F-B4CD-4D7575C5948C}
+containerIndex:1
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[Remove front panel=FALSE
+]
+newName:nominal teststand model options dialog.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal teststand model options dialog.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[3] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+delimted name:nominal teststand model sequence support.lvlib:filter possible timestamps stored as numbers.vi
+type:Instrument
+buttons:0
+viflags2:512
+links:[0,8,9]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+itemID:{F4F67CA2-8256-4D27-AB9B-336E29A5C277}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:filter possible timestamps stored as numbers.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as numbers.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[4] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+delimted name:nominal teststand model sequence support.lvlib:filter possible timestamps stored as strings.vi
+type:Instrument
+buttons:0
+viflags2:512
+links:[0,7]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+itemID:{E1377954-9932-4162-8EFA-4EBDF66FAD15}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:filter possible timestamps stored as strings.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps stored as strings.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[5] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+delimted name:nominal teststand model sequence support.lvlib:filter possible timestamps.vi
+type:Instrument
+buttons:0
+viflags2:512
+links:[0,8,4,3]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+itemID:{DAC164EE-E396-4892-AC9D-E69DBAA4218C}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:filter possible timestamps.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:filter possible timestamps.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[6] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+delimted name:nominal teststand model sequence support.lvlib:recurse property bag for specific properties.vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[0,6]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+itemID:{80D98A08-8A44-4C29-AD79-26072DFB3A93}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:recurse property bag for specific properties.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:recurse property bag for specific properties.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[7] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+delimted name:nominal teststand model sequence support.lvlib:try to parse timestamp string.vi
+type:Instrument
+buttons:0
+viflags2:536872448
+links:[0,17,18,20]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+itemID:{6DECEA1B-D028-4783-B1AC-E172061B1AE2}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:try to parse timestamp string.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:try to parse timestamp string.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[8] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+delimted name:nominal teststand model sequence support.lvlib:nominal numeric result collection.ctl
+type:Control
+buttons:188
+viflags2:536871936
+links:[0]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+itemID:{6CAAFBD5-4515-48FF-B69B-FD1F4AA3F923}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:nominal numeric result collection.ctl
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal numeric result collection.ctl
+preventRename:FALSE
+standardVI:FALSE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[9] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+delimted name:nominal teststand model sequence support.lvlib:teststand epoch.vi
+type:Instrument
+buttons:0
+viflags2:131584
+links:[0]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+itemID:{DC79A887-5E76-4006-82D7-EE7B3634693E}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:teststand epoch.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:teststand epoch.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[10] (existing source)
+path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+delimted name:nominal teststand model sequence support.lvlib:nominal convert results recursor.vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[0,8,10]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+itemID:{7C6CB7BF-3300-4573-8B98-1ABE08BAAA5C}
+containerIndex:2
+sourceInclusion:TopLevel
+destinationIndex:0
+properties:[]
+newName:nominal convert results recursor.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:nominal teststand model sequence support.lvlib:nominal convert results recursor.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[11] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+delimted name:TestStand - Start Modal Dialog (Sequence Context).vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[12]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:TestStand - Start Modal Dialog (Sequence Context).vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:TestStand - Start Modal Dialog (Sequence Context).vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[12] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+delimted name:TestStand - Start Modal Dialog (Private).vi
+type:Instrument
+buttons:0
+viflags2:536871936
+links:[13,14]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:TestStand - Start Modal Dialog (Private).vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:TestStand - Start Modal Dialog (Private).vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:TRUE
+eng_reference:0)
+
+LinkerItem[13] (not valid)
+path:user32.dll
+delimted name:user32.dll
+type:Shared library
+buttons:0
+viflags2:0
+links:[]
+linker inclusion:include
+ClassData:(Source)
+(path:
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:
+lvfile:FALSE
+valid:FALSE
+eng_inBuild:FALSE
+eng_isNonVILink:TRUE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:user32.dll
+preventRename:FALSE)
+
+LinkerItem[14] (not valid)
+path:LabVIEW
+delimted name:LabVIEW
+type:Shared library
+buttons:0
+viflags2:0
+links:[]
+linker inclusion:include
+ClassData:(Source)
+(path:
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:
+lvfile:FALSE
+valid:FALSE
+eng_inBuild:FALSE
+eng_isNonVILink:TRUE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:LabVIEW
+preventRename:FALSE)
+
+LinkerItem[15] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+delimted name:TestStand - End Modal Dialog (Sequence Context).vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[16]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:TestStand - End Modal Dialog (Sequence Context).vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:TestStand - End Modal Dialog (Sequence Context).vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[16] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+delimted name:TestStand - End Modal Dialog (Private).vi
+type:Instrument
+buttons:0
+viflags2:1024
+links:[13]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:TestStand - End Modal Dialog (Private).vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:TestStand - End Modal Dialog (Private).vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:TRUE
+eng_reference:0)
+
+LinkerItem[17] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\dlg_ctls.llb\Space Constant.vi
+delimted name:Space Constant.vi
+type:Instrument
+buttons:161
+viflags2:132608
+links:[]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\dlg_ctls.llb\Space Constant.vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:Space Constant.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:Space Constant.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[18] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace.vi
+delimted name:Trim Whitespace.vi
+type:Instrument
+buttons:161
+viflags2:132608
+links:[19,20]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace.vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:Trim Whitespace.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:Trim Whitespace.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[19] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\whitespace.ctl
+delimted name:whitespace.ctl
+type:Control
+buttons:188
+viflags2:1024
+links:[]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\whitespace.ctl
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:whitespace.ctl
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:whitespace.ctl
+preventRename:FALSE
+standardVI:FALSE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+LinkerItem[20] (new source)
+path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+delimted name:Trim Whitespace One-Sided.vi
+type:Instrument
+buttons:161
+viflags2:132608
+links:[]
+linker inclusion:include
+ClassData:(VI)
+(path:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+itemID:
+containerIndex:0
+sourceInclusion:IncludeIfReferenced
+destinationIndex:0
+properties:[]
+newName:Trim Whitespace One-Sided.vi
+lvfile:FALSE
+valid:TRUE
+eng_inBuild:TRUE
+eng_isNonVILink:FALSE
+Amalgamation: FALSE
+Amalgamation Piece: FALSE
+eng_delimitedName:Trim Whitespace One-Sided.vi
+preventRename:FALSE
+standardVI:TRUE
+dynamicDispatch:FALSE
+LLBtopLevel:FALSE
+privateDataControl:FALSE
+eng_hasNonVILinks:FALSE
+eng_reference:0)
+
+[AB_L Preview_PresrvHier](0.376)(360640):
+
+[AB_L Build Preview](0.377)(360640):
+Files:
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\dlg_ctls.llb\Space Constant.vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace.vi
+nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\whitespace.ctl
+nominal teststand model sequence support.lvlibp\filter possible timestamps stored as numbers.vi
+nominal teststand model sequence support.lvlibp\filter possible timestamps stored as strings.vi
+nominal teststand model sequence support.lvlibp\filter possible timestamps.vi
+nominal teststand model sequence support.lvlibp\nominal convert results recursor.vi
+nominal teststand model sequence support.lvlibp\nominal numeric result collection.ctl
+nominal teststand model sequence support.lvlibp\nominal teststand convert results.vi
+nominal teststand model sequence support.lvlibp\nominal teststand model options dialog.vi
+nominal teststand model sequence support.lvlibp\nominal teststand model sequence support.lvlib
+nominal teststand model sequence support.lvlibp\recurse property bag for specific properties.vi
+nominal teststand model sequence support.lvlibp\teststand epoch.vi
+nominal teststand model sequence support.lvlibp\try to parse timestamp string.vi
+
+Destination Files:
+nominal teststand model sequence support.lvlibp
+
+Max path length: (247), C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+
+[AB_L Set Context Tags](0.378)(360640):
+
+[AB_L Post Set Context Tags](0.381)(360640):
+
+[AB_L Generate Identity Maps](0.384)(360640):
+
+[AB_L Store Identity Maps](0.384)(360640):
+
+[AB_L Open Refs In Prep](0.385)(360640):
+
+[AB_L Write User Log](0.385)(360640):
+
+[AB_L Create Destinations](0.399)(360640):
+
+
+Destination[0]
+destName:nominal teststand model sequence support.lvlibp
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+libraryName:
+preserveHierarchy:TRUE
+eng_inBuild:TRUE
+eng_libraryReference:0
+
+Destination[1]
+destName:Support Directory
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:FALSE
+eng_libraryReference:0
+
+Destination[2]
+destName:
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:TRUE
+eng_libraryReference:0
+
+Destination[3]
+destName:
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:TRUE
+eng_libraryReference:0
+
+Destination[4]
+destName:
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\dlg_ctls.llb
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:TRUE
+eng_libraryReference:0
+
+Destination[5]
+destName:
+path:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb
+libraryName:
+preserveHierarchy:FALSE
+eng_inBuild:TRUE
+eng_libraryReference:0
+
+[AB_L Copy Non-LV Files](0.400)(360640):
+
+[AB_L PostCopy Non-LV Files](0.400)(360640):
+
+[AB_L Open PPL SourceLib](0.404)(360640):
+
+[AB_L Open Refs In Build](0.469)(360768):
+
+[AB_L Read Moddates](0.472)(360768):
+
+[AB_L Disconnect Deps](0.483)(360768):
+
+[AB_L Copy LV Files](0.483)(360768):
+
+SourceItem[1]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+newDelimitedName:nominal teststand model sequence support.lvlibp
+oldDelimitedName:nominal teststand model sequence support.lvlib
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:84
+
+SourceItem[3]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal teststand convert results.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:nominal teststand convert results.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:4
+
+SourceItem[4]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal teststand model options dialog.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:nominal teststand model options dialog.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:4
+
+SourceItem[5]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps stored as numbers.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:filter possible timestamps stored as numbers.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:6
+
+SourceItem[6]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps stored as strings.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:filter possible timestamps stored as strings.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:5
+
+SourceItem[7]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:filter possible timestamps.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:4
+
+SourceItem[8]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\recurse property bag for specific properties.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:recurse property bag for specific properties.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[9]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\try to parse timestamp string.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:try to parse timestamp string.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[10]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal numeric result collection.ctl
+newDelimitedName:nominal teststand model sequence support.lvlibp:nominal numeric result collection.ctl
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[11]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\teststand epoch.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:teststand epoch.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[12]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal convert results recursor.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:nominal convert results recursor.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:TRUE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[13]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:TestStand - Start Modal Dialog (Sequence Context).vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[14]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:TestStand - Start Modal Dialog (Private).vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:TRUE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[15]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:TestStand - End Modal Dialog (Sequence Context).vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[16]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:TestStand - End Modal Dialog (Private).vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:TRUE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:1
+
+SourceItem[17]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\dlg_ctls.llb\Space Constant.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\dlg_ctls.llb\Space Constant.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:Space Constant.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[18]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:Trim Whitespace.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[19]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\whitespace.ctl
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\whitespace.ctl
+newDelimitedName:nominal teststand model sequence support.lvlibp:whitespace.ctl
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:0
+
+SourceItem[20]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+newPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+newDelimitedName:nominal teststand model sequence support.lvlibp:Trim Whitespace One-Sided.vi
+oldDelimitedName:
+LLBtopLevel?:FALSE
+HasNonVILinks?:FALSE
+IsNonVILink?:FALSE
+appTopLevel?:FALSE
+IsRTM?:FALSE
+processTime:0
+
+[AB_L Post Copy LV Files](0.512)(360768):
+
+[AB_L Change Popup Paths](0.512)(360768):
+
+[AB_L Prepare Inline](0.513)(360768):
+
+[AB_L Prepare Close](0.513)(360768):
+
+[AB_L Compile](0.884)(360768):
+
+[AB_L Save](0.884)(360768):
+
+SourceItem[0]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model sequence support.lvlib
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp
+saveLevel:0x0
+saveTime:133
+
+SourceItem[1]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand convert results.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal teststand convert results.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[2]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal teststand model options dialog.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal teststand model options dialog.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[3]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as numbers.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps stored as numbers.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[4]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps stored as strings.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps stored as strings.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[5]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\filter possible timestamps.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\filter possible timestamps.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[6]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\recurse property bag for specific properties.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\recurse property bag for specific properties.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[7]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\try to parse timestamp string.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\try to parse timestamp string.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[8]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal numeric result collection.ctl
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal numeric result collection.ctl
+saveLevel:0x42001
+saveTime:1
+
+SourceItem[9]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\teststand epoch.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\teststand epoch.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[10]
+sourcePath:C:\sw\ni-teststand-nominal-client\teststand model seq support\nominal convert results recursor.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\nominal convert results recursor.vi
+saveLevel:0x42001
+saveTime:0
+
+SourceItem[11]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Sequence Context).vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[12]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - Start Modal Dialog (Private).vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[13]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Sequence Context).vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[14]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\addons\TestStand\_TSUtility.llb\TestStand - End Modal Dialog (Private).vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[15]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\dlg_ctls.llb\Space Constant.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\dlg_ctls.llb\Space Constant.vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[16]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace.vi
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[17]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\whitespace.ctl
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\whitespace.ctl
+saveLevel:0x42003
+saveTime:0
+
+SourceItem[18]
+sourcePath:C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+destPath:C:\sw\ni-teststand-nominal-client\teststand public directory\Components\Models\ModelPlugins\nominal\nominal teststand model sequence support.lvlibp\1abvi3w\vi.lib\Utility\error.llb\Trim Whitespace One-Sided.vi
+saveLevel:0x42003
+saveTime:0
+
+[AB_L Post Save](1.019)(361024):
+
+[AB_L Set Top Level](1.037)(360640):
+
+[AB_L Close Refs](1.108)(360192):
+
+[AB_L Cache Moddates](1.116)(360192):
+
+[AB_L PackagePackedLib](1.116)(360192):
+
+[AB_L BuildPPLAppMethod](1.657)(360192):
+
+[AB_L CloseBuild](1.664)(360192):
+
+[AB_L END](2.714)(360192):
+7/30/2026 2:19:09 PM

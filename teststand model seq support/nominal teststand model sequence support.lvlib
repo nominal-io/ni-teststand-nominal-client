@@ -8,8 +8,16 @@
 </Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="nominal numeric result collection.ctl" Type="VI" URL="../nominal numeric result collection.ctl"/>
-	<Item Name="nominal convert results recursor.vi" Type="VI" URL="../nominal convert results recursor.vi"/>
+	<Item Name="other" Type="Folder">
+		<Item Name="filter possible timestamps stored as numbers.vi" Type="VI" URL="../filter possible timestamps stored as numbers.vi"/>
+		<Item Name="filter possible timestamps stored as strings.vi" Type="VI" URL="../filter possible timestamps stored as strings.vi"/>
+		<Item Name="filter possible timestamps.vi" Type="VI" URL="../filter possible timestamps.vi"/>
+		<Item Name="recurse property bag for specific properties.vi" Type="VI" URL="../recurse property bag for specific properties.vi"/>
+		<Item Name="try to parse timestamp string.vi" Type="VI" URL="../try to parse timestamp string.vi"/>
+		<Item Name="nominal numeric result collection.ctl" Type="VI" URL="../nominal numeric result collection.ctl"/>
+		<Item Name="teststand epoch.vi" Type="VI" URL="../teststand epoch.vi"/>
+		<Item Name="nominal convert results recursor.vi" Type="VI" URL="../nominal convert results recursor.vi"/>
+	</Item>
 	<Item Name="nominal teststand convert results.vi" Type="VI" URL="../nominal teststand convert results.vi"/>
 	<Item Name="nominal teststand model options dialog.vi" Type="VI" URL="../nominal teststand model options dialog.vi"/>
 </Library>
