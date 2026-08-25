@@ -1,26 +1,28 @@
 # NI TestStand® Integration for Nominal Core
-Provides two integration options for using Nominal in NI TestStand®:
+Provides two integration options for using Nominal in NI TestStand®.
 
- * Test steps which wrap the LabVIEW® nominal client, making integration of test results from NI TestStand® into nominal core easier.
- * A report model plugin which allows users to automatically log `Additional Results` to Nominal Core.
+- **Test steps** which wrap the LabVIEW® Nominal client, making integration of test results from NI TestStand® into Nominal Core easier.
+- **A report model plugin** which automatically logs `Additional Results` to Nominal Core.
+
+The report model plugin is an alpha release and supports single-point numeric properties only. Other data types, such as waveforms, are straightforward to add but are not supported yet; use the test steps for those.
+
+Refer (here)[https://docs.nominal.io/warehouse/documentation/connectors-and-sdks/teststand] for the full docs.
+
+## Requirements
+The steps and model plugin depend on this VIPM package in order to build:
+ - [Nominal.io Client](https://www.vipm.io/package/nominal_lib_nominal_io_client/)
 
 ## Install
 Download a release from the sidebar or clone this repo and move the contents of the zip or the contents of the folder `teststand public directory` to the TestStand® public directory. For the 2026/64-bit version of LabVIEW®, this should be `C:\Users\Public\Documents\National Instruments\TestStand 2026 (64-bit)`. Refer to product documentation for any deviations from that path.
 
-## Dependencies
-The steps and model plugin depend on this VIPM package in order to build:
- - [Nominal.io Client](https://www.vipm.io/package/nominal_lib_nominal_io_client/)
-
-## Shared Configuration Requirements
-The steps and model plugin require an API key and an RID to operate. 
-
-Both the steps and the model plugin support database RIDs, being bound to specific assets by RID, or creation of assets and associated RIDs.
+## Configuration
+The steps and the model plugin both require an API key and an RID to operate. Both support dataset RIDs, binding to a specific asset by RID, or creation of assets and their associated RIDs.
 
 ### Nominal API Key
 This key can be generated as described in the [nominal SDK documentation](https://docs.nominal.io/core/sdk/python-client/authentication#generating-an-api-key). Keep this key secret.
 
 ### Nominal RIDs
-A dataset can be created by [first creating an asset](https://docs.nominal.io/core/documentation/platform/data/creating-an-asset#create-an-asset) and then by [creating and/or associating a dataset](https://docs.nominal.io/core/documentation/platform/data/creating-an-asset#add-a-data-source) with the asset. This key is just an identifier, not a secret. Depending on your precise needs you can create an asset from the test steps, allow the model plugin to generate an asset for each UUT, or use a fixed asset or dataset to log to.
+A dataset can be created by [first creating an asset](https://docs.nominal.io/core/documentation/platform/data/creating-an-asset#create-an-asset) and then by [creating and/or associating a dataset](https://docs.nominal.io/core/documentation/platform/data/creating-an-asset#add-a-data-source) with the asset. This value is an identifier, not a secret. Depending on your precise needs you can create an asset from the test steps, allow the model plugin to generate an asset for each UUT, or use a fixed asset or dataset to log to.
 
 
 ## Usage
@@ -39,10 +41,11 @@ The test steps provided are a light wrapper around the LabVIEW® API for Nominal
 
 #### Buffers
 The steps contain two helper buffers:
-* Point buffer: implemented by `Create Point Buffer`, `Add to Point Buffer`, `Flush Point Buffer to Channel`, and `Destroy Point Buffer`, this buffer is simply a way to store a sequence of (time, value) points which can later be flushed to a specified channel. If you have a single instrument you are monitoring over the course of a test, this is easiest to use as it avoids array manipulation in TestStand. If you have multiple instruments, it is simpler to use the batch buffer because the name of the channel is stored in that buffer and so multiple buffers do not need to be managed.
-* Batch buffer: implemented by `Create Batch Buffer`, `Add Point to Batch Buffer`, `Flush Batch Buffer to Nominal`, and `Destroy Batch Buffer`, this buffer is a sequence of channel[str] to points[array of (time, value)] which can be flushed to Nominal automatically. If you have multiple long-lived instruments you are collecting data from, this provides a single-sample interface you can use to collect data rather than having to do array manipulation in TestStand.
 
-In both cases, the purpose is to help provide a single-point interface for sequences with granular test steps. If your test steps already provide a waveform or array of (time, value) data points, you can simply use `Stream Points to Channel` [array of (time, value) points], `Stream Array to Channel` [array of times, array of values], or `Stream Waveform to Channel` [standard LabVIEW® waveforms with a T0, dt, and list of values].
+- **Point buffer**: implemented by `Create Point Buffer`, `Add to Point Buffer`, `Flush Point Buffer to Channel`, and `Destroy Point Buffer`. This buffer stores a sequence of (time, value) points which can later be flushed to a specified channel. If you have a single instrument you are monitoring over the course of a test, this is easiest to use as it avoids array manipulation in TestStand®.
+- **Batch buffer**: implemented by `Create Batch Buffer`, `Add Point to Batch Buffer`, `Flush Batch Buffer to Nominal`, and `Destroy Batch Buffer`. This buffer is a mapping of channel[str] to points[array of (time, value)] which can be flushed to Nominal automatically. If you have multiple long-lived instruments you are collecting data from, this provides a single-sample interface you can use to collect data rather than having to do array manipulation in TestStand®.
+
+In both cases, the purpose is to provide a single-point interface for sequences with granular test steps. If your test steps already provide a waveform or array of (time, value) data points, you can use `Stream Points to Channel` [array of (time, value) points], `Stream Array to Channel` [array of times, array of values], or `Stream Waveform to Channel` [standard LabVIEW® waveforms with a T0, dt, and list of values].
 
 #### Conventions for Ease of Use
 The test steps are developed as basic LabVIEW® test steps -- they are more like pre-configured steps that you made yourself vs other published test steps which may provide an additional configuration dialog for configuring a hidden Action step. This means the usage is more flexible than other tools, but requires some effort to configure variables used by the steps and to route data as needed. To make this as easy as possible, the test steps are written with certain variable conventions in mind:
@@ -62,8 +65,7 @@ The sequence `example nominal core sequence.seq` is the easiest way to get a fee
 
 
 ### Report Model Plugin
-The report plugin is designed to accept single point values as additional results. Other data types (such as waveforms) are straightforward to support but the alpha release does not support anything other than single-point numeric properties. The theory of operation for this plugin is to look through every `Additional Result` value, identify numerics, and push those to Nominal using the user-specified result name as the channel name. That is, you can specify an Additional Result as having the name "station_psu_voltage" anywhere from 1 to N times through the run of your test sequence and every value will be stored in the same channel in Nominal. 
-
+The report plugin accepts single point values as additional results. The theory of operation is to look through every `Additional Result` value, identify numerics, and push those to Nominal using the user-specified result name as the channel name. That is, you can specify an Additional Result as having the name "station_psu_voltage" anywhere from 1 to N times through the run of your test sequence and every value will be stored in the same channel in Nominal.
 
 #### Accurate TimeStamps
 By default, the timestamp used is the timestamp of the step itself. Since this is imprecise (especially for longer-running steps), you can override this by producing a second result with any of the following suffixes: `_ts`, `_time`, or `_timestamp`. That is, station_psu_voltage_ts or station_psu_voltage_time or station_psu_voltage_timestamp, stored in the same `Additional Results` record, will be used if present. The timestamp format can be either numeric or string:
@@ -108,7 +110,9 @@ The different approaches can be seen in `example nominal reporting sequence.seq`
 <img width="2193" height="1161" alt="image" src="https://github.com/user-attachments/assets/5707f403-2afe-4797-bad5-e58896d33a5a" />
 Note that the third waveform is expected due to the low time resolution used on that segment's time source
 
+## Building from source
 
+The steps and model plugin depend on the [Nominal.io Client](https://www.vipm.io/package/nominal_lib_nominal_io_client/) VIPM package in order to build.
 
 
 ------
