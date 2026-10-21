@@ -7,3 +7,6 @@
 .cache/
 
 .*.UserState
+
+*Report*.xml
+*Report*.xml.html
