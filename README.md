@@ -6,14 +6,14 @@ Provides two integration options for using Nominal in NI TestStand®.
 
 The report model plugin is an alpha release and supports single-point numeric properties only. Other data types, such as waveforms, are straightforward to add but are not supported yet; use the test steps for those.
 
-Refer (here)[https://docs.nominal.io/warehouse/documentation/connectors-and-sdks/teststand] for the full docs.
+The full docs are at [nominal-io.github.io/pub-docs/ni/teststand](https://nominal-io.github.io/pub-docs/ni/teststand/).
 
 ## Requirements
 The steps and model plugin depend on this VIPM package in order to build:
  - [Nominal.io Client](https://www.vipm.io/package/nominal_lib_nominal_io_client/)
 
 ## Install
-Download a release from the sidebar or clone this repo and move the contents of the zip or the contents of the folder `teststand public directory` to the TestStand® public directory. For the 2026/64-bit version of LabVIEW®, this should be `C:\Users\Public\Documents\National Instruments\TestStand 2026 (64-bit)`. Refer to product documentation for any deviations from that path.
+Download a release from the sidebar or clone this repo and move the contents of the zip or the contents of the folder `teststand public directory` to the TestStand® public directory. For TestStand® 2026 (64-bit), this should be `C:\Users\Public\Documents\National Instruments\TestStand 2026 (64-bit)`. Refer to product documentation for any deviations from that path.
 
 ## Configuration
 The steps and the model plugin both require an API key and an RID to operate. Both support dataset RIDs, binding to a specific asset by RID, or creation of assets and their associated RIDs.

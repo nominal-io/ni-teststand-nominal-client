@@ -1,0 +1,32 @@
+/* The project name in the header keeps its case: NI TestStand, not NI TESTSTAND. */
+.sy-head-brand strong {
+  text-transform: none;
+}
+
+/* VI icons are 32x32 pixel art: scale them up without smoothing. */
+.lv-icon {
+  image-rendering: pixelated;
+}
+
+/* A step's header: its VI's icon beside the VI's description. */
+.lv-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.lv-header > p:first-child {
+  flex: none;
+  margin: 0;
+}
+.lv-icon {
+  width: 64px;
+  height: 64px;
+}
+.lv-description > :first-child {
+  margin-top: 0;
+}
+
+.lv-meta {
+  font-size: 0.875em;
+  color: var(--sy-c-text-weak, inherit);
+}

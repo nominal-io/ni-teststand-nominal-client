@@ -10,3 +10,10 @@
 
 *Report*.xml
 *Report*.xml.html
+*build log.txt
+
+# Docs (Python toolchain in pyproject.toml); ref/ is generated from docs/lvdocs and the palette
+.venv
+__pycache__/
+docs/_build/
+docs/ref/
