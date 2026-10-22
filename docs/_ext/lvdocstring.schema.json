@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "LabVIEW export (lvdocstring.json)",
-  "description": "What the LabVIEW export writes for the docs: one entry per VI and typedef in the steps' library. The docs build skips the ones no step type in the palette calls. It's the same tool and format as labview-client's, which also exports polymorphic VIs and palette locations; the steps have neither. Images are named by the MD5 of the VI's path and live in assets/ next to this file; the docs build uses only the file name of icon and connpane.",
+  "description": "What the LabVIEW export writes for the docs: one entry per VI and typedef in the steps' library, except those marked to leave out. It's the same tool and format as labview-client's, which also exports polymorphic VIs and palette locations; the steps have neither. Images are named by the MD5 of the VI's path and live in assets/ next to this file; the docs build uses only the file name of icon and connpane.",
   "type": "array",
   "minItems": 1,
   "items": { "$ref": "#/$defs/entry" },

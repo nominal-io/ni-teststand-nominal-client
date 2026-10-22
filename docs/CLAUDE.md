@@ -30,8 +30,9 @@ fact; ask your human.
 is gitignored. To change what a step's entry says, change the VI's description (VI Properties >
 Documentation) or its inputs' and outputs' descriptions, then re-export with the tool in
 `lvdocs/`. The palette has no submenus, so the groups are `GROUPS` in `_ext/teststand.py`. The
-build fails when a step isn't in `GROUPS` or its VI isn't in the export. VIs that no step calls,
-such as typedefs, are left out.
+build fails when a step isn't in `GROUPS` or its VI isn't in the export. Everything else in the
+export is documented too: VIs no step calls under "Other VIs", typedefs under "Types". To leave an
+item out, mark it in its description so the exporter skips it.
 
 ## Examples
 

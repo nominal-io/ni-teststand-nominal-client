@@ -1,8 +1,8 @@
 """The Reference page, generated from the LabVIEW export in ``docs/lvdocs`` and the step type palette.
 
 The LabVIEW tool in ``docs/lvdocs`` (the same one labview-client uses) writes ``lvdocstring.json``,
-one entry per VI in the steps' library, and their icons under ``assets/``. VIs no step calls, such
-as typedefs, are skipped. Its format is in
+one entry per VI and typedef in the steps' library that isn't marked to leave out, and their icons
+under ``assets/``. VIs no step calls, and the typedefs, get sections of their own after the steps. Its format is in
 ``_ext/lvdocstring.schema.json``. The step types, their names and the VI each one calls come from
 the type palette, ``teststand public directory/Components/TypePalettes/Nominal_Core_Stream_Types.ini``.
 The palette puts every step in one group, so the groups on the page come from ``GROUPS`` below.
@@ -251,6 +251,8 @@ def _load_steps_binary(palette: Path, raw: bytes) -> dict[str, Step]:
 
 _ESCAPE = re.compile(r"([\\*_\[\]<>{}|&])")
 _BOLD = re.compile(r"<\s*(/?)\s*b\s*>", re.I)
+# bold around nothing but spaces, which LabVIEW leaves behind; as ** ** it would read as a rule
+_EMPTY_BOLD = re.compile(r"<\s*b\s*>(\s*)<\s*/\s*b\s*>", re.I)
 
 
 def _inline(line: str) -> str:
@@ -266,7 +268,8 @@ def _inline(line: str) -> str:
 
 def lv_text(text: str) -> str:
     """A LabVIEW description as Markdown, with its line breaks kept, as Context Help shows them."""
-    text = _BOLD.sub("\x02", text.replace("\r\n", "\n").replace("\r", "\n")).strip()
+    text = _EMPTY_BOLD.sub(r"\1", text.replace("\r\n", "\n").replace("\r", "\n"))
+    text = _BOLD.sub("\x02", text).strip()
     paragraphs = re.split(r"\n\s*\n", text)
     return "\n\n".join("  \n".join(_inline(line.strip()) for line in p.split("\n") if line.strip()) for p in paragraphs if p.strip())
 
@@ -476,14 +479,22 @@ class Pages:
             "{.lv-meta}",
             " · ".join(meta),
             "",
-            "::::{container} lv-header",
         ]
+        return lines + self.header(vi) + self.terminals(vi)
+
+    def other(self, vi: VI) -> list[str]:
+        """A VI or typedef in the export that no step calls."""
+        title = re.sub(r"\.(vim?|ctl)$", "", vi.file)
+        lines = [f"### {_inline(title)}", "", "{.lv-meta}", f"[{_code(vi.file)}]({self.source_url(vi.path)})", ""]
+        return lines + self.header(vi) + self.terminals(vi)
+
+    def header(self, vi: VI) -> list[str]:
+        lines = ["::::{container} lv-header"]
         if icon := self.image(vi.icon):
             lines += [f"![]({icon}){{.lv-icon}}", ""]
         if text := lv_text(vi.description):
             lines += [":::{container} lv-description", text, ":::"]
-        lines += ["::::", ""]
-        return lines + self.terminals(vi)
+        return lines + ["::::", ""]
 
     def generate(self) -> None:
         steps = _load_steps(self.palette)
@@ -492,8 +503,10 @@ class Pages:
             step.vi = by_file.pop(step.vi_file.casefold(), None)
             if step.vi is None:
                 logger.warning("LabVIEW export: %s, which %s calls, isn't in lvdocstring.json", step.vi_file, step.type_name)
-        for vi in by_file.values():  # typedefs and helper VIs: the export has every VI in the library
-            logger.info("TestStand reference: skipping %s, which no step calls", vi.path)
+        # what's left is in the export but called by no step: VIs, and typedefs (.ctl)
+        others = sorted(by_file.values(), key=lambda vi: vi.file.casefold())
+        typedefs = [vi for vi in others if vi.file.casefold().endswith(".ctl")]
+        others = [vi for vi in others if vi not in typedefs]
         grouped = [name for names in GROUPS.values() for name in names]
         for name in grouped:
             if name not in steps:
@@ -507,7 +520,7 @@ class Pages:
             "",
             "{.lead}",
             "The steps in the **Nominal Core** step group. Each one calls a VI, and that VI's inputs and "
-            "outputs are the step's parameters.",
+            "outputs are the step's parameters. The other VIs and the types in the steps' library follow.",
             "",
         ]
         for group, names in GROUPS.items():
@@ -515,10 +528,19 @@ class Pages:
             for name in names:
                 if (step := steps.get(name)) and step.vi:
                     lines += self.step(step)
+        if others:
+            lines += ["## Other VIs", "", "VIs in the steps' library that no step calls.", ""]
+            for vi in others:
+                lines += self.other(vi)
+        if typedefs:
+            lines += ["## Types", "", "Type definitions in the steps' library.", ""]
+            for vi in typedefs:
+                lines += self.other(vi)
         self.write("ref/index.md", "\n".join(lines).rstrip() + "\n")
         self.prune("ref")
         missing = sum(1 for s in steps.values() if s.vi and not s.vi.description.strip())
-        logger.info("TestStand reference: %d steps in %d groups, %d without a description", len(steps), len(GROUPS), missing)
+        logger.info("TestStand reference: %d steps in %d groups, %d without a description; %d other VIs, %d types",
+                    len(steps), len(GROUPS), missing, len(others), len(typedefs))
 
 
 # -- The ts domain --------------------------------------------------------------------------------
