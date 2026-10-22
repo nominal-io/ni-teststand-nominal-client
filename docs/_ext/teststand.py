@@ -41,11 +41,12 @@ logger = logging.getLogger(__name__)
 
 # group heading -> step type names, in page order
 GROUPS = {
-    "Connection": ["Nominal_Core_Open", "Nominal_Core_Close"],
+    "Connection": ["Nominal_Connect", "Nominal_Disconnect"],
     "Assets": ["Nominal_Create_Asset", "Nominal_Get_Asset", "Nominal_Update_Asset"],
     "Datasets": ["Nominal_Create_Asset_Dataset", "Nominal_Get_Dataset_by_RID"],
     "Streams and channels": [
         "Nominal_Create_Stream_from_Dataset",
+        "Nominal_Create_Stream_from_Dataset_RID",
         "Nominal_Find_or_Create_Stream_Channel",
         "Nominal_Update_Channel_Metadata",
         "Nominal_Destroy_Stream",
@@ -58,12 +59,14 @@ GROUPS = {
     "Point buffer": [
         "Nominal_Create_Point_Buffer",
         "Nominal_Add_to_Point_Buffer",
+        "Nominal_Read_from_Point_Buffer",
         "Nominal_Flush_Point_Buffer_to_Channel",
         "Nominal_Destroy_Point_Buffer",
     ],
     "Batch buffer": [
         "Nominal_Create_Batch_Buffer",
         "Nominal_Add_Point_to_Batch_Buffer",
+        "Nominal_Get_Channel_Buffer_from_Batch",
         "Nominal_Flush_Batch_Buffer",
         "Nominal_Destroy_Batch_Buffer",
     ],
