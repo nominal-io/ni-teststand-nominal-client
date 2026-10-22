@@ -37,7 +37,7 @@ Pick the path that matches how much control you need:
 ## Requirements
 
 - NI TestStand®
-- The LabVIEW® 2026 Run-Time Engine (64-bit)
+- The LabVIEW® 2020 Run-Time Engine
 
 Building the steps and the plugin from source also needs LabVIEW® with the [Nominal client for LabVIEW](site:/ni/labview/).
 
