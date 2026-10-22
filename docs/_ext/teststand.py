@@ -21,7 +21,7 @@ import re
 import urllib.parse
 import xml.etree.ElementTree as ET
 import zlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path, PureWindowsPath
 from typing import Any, Iterator
 
@@ -174,6 +174,8 @@ class Step:
     default_name: str  # the name a new step gets, "Nominal Connect"
     vi_file: str  # "nominal open.vi"
     vi: VI | None = None
+    # parameter label or caption, casefolded -> its TestStand type: "run" -> "Object Reference"
+    param_types: dict[str, str] = field(default_factory=dict)
 
 
 def _menu_fallback(type_name: str) -> str:
@@ -198,7 +200,8 @@ def _literal(expr: str) -> str:
 def _load_steps_xml(palette: Path) -> dict[str, Step]:
     """Each step type is an element named for it under ``typelist/typedef``, with its default step
     name in ``DefaultNameFormat``, its menu name in ``Menu``'s ``ItemName`` (empty when it's the
-    default name) and its VI in ``VIPath``."""
+    default name), its VI in ``VIPath``, and a ``VIParameter`` per parameter whose ``DisplayType``
+    is its TestStand type."""
     root = ET.parse(palette).getroot()
     ns = root.tag[: root.tag.index("}") + 1] if root.tag.startswith("{") else ""
     steps: dict[str, Step] = {}
@@ -212,7 +215,13 @@ def _load_steps_xml(palette: Path) -> dict[str, Step]:
             title = _literal(el.findtext(f".//{ns}Menu//{ns}ItemName/{ns}value") or "") or default_name
             if not title:
                 logger.warning("TestStand palette: no menu name found for %s", name)
-            steps[name] = Step(name, title or _menu_fallback(name), default_name, PureWindowsPath(vi_path).name)
+            step = Step(name, title or _menu_fallback(name), default_name, PureWindowsPath(vi_path).name)
+            for parm in el.iterfind(f".//{ns}VIParameter"):
+                if display := parm.findtext(f"{ns}subprops/{ns}DisplayType/{ns}value"):
+                    for key in ("Label", "Caption"):
+                        if label := parm.findtext(f"{ns}subprops/{ns}{key}/{ns}value"):
+                            step.param_types.setdefault(label.casefold(), display)
+            steps[name] = step
     return steps
 
 
@@ -435,7 +444,9 @@ class Pages:
             elif path.is_dir() and not any(path.iterdir()):
                 path.rmdir()
 
-    def terminals(self, vi: VI) -> list[str]:
+    def terminals(self, vi: VI, ts_types: dict[str, str] | None = None) -> list[str]:
+        """Inputs and outputs. With a step's ``ts_types``, a parameter shows its TestStand type, and
+        the LabVIEW one only where it names a class or reference."""
         out: list[str] = []
         for direction, title in (("input", "Inputs"), ("output", "Outputs")):
             # exported in connector pane order; reversed, they read top to bottom as on the pane
@@ -449,6 +460,10 @@ class Pages:
                 out.append(f"**{_inline(t.name)}**{badge.get(t.rule, '') if direction == 'input' else ''}")
                 info = _type(t)
                 first = _code(info.text)
+                ts_type = (ts_types or {}).get(t.label.casefold()) or (ts_types or {}).get(t.name.casefold())
+                if ts_type and not t.is_error:
+                    lv_ref = info.text.endswith(".lvclass") or info.text == "Refnum"
+                    first = f"{_code(ts_type)} ({first})" if lv_ref else _code(ts_type)
                 if default := _default(t):
                     first += f" · default {_code(default)}"
                 body = [first]
@@ -483,7 +498,7 @@ class Pages:
             " · ".join(meta),
             "",
         ]
-        return lines + self.header(vi) + self.terminals(vi)
+        return lines + self.header(vi) + self.terminals(vi, step.param_types)
 
     def other(self, vi: VI) -> list[str]:
         """A VI or typedef in the export that no step calls."""
