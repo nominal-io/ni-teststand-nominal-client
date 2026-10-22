@@ -18,9 +18,10 @@ Quote labels and messages exactly as the source has them, labels in bold.
 - Worked examples: `example nominal core sequence.seq` and `example nominal reporting sequence.seq`.
 - README.md, which must agree with these pages.
 
-The palette and the .seq files are in TestStand's binary format: a `TOF1` header, then `PMCZ` and
-4 bytes, then a zlib stream whose strings can be read without TestStand. `_ext/teststand.py` reads
-the palette that way. Don't open or save .seq, .ini or .vi files in TestStand or LabVIEW to check a
+The palette is saved as XML (Station Options > File > File Format Options), which
+`_ext/teststand.py` reads; it also reads the older binary format. The .seq files are binary: a
+`TOF1` header, then `PMCZ` and 4 bytes, then a zlib stream whose strings can be read without
+TestStand. Don't open or save .seq, .ini or .vi files in TestStand or LabVIEW to check a
 fact; ask your human.
 
 ## The reference

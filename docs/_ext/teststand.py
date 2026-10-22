@@ -178,19 +178,52 @@ def _menu_fallback(type_name: str) -> str:
 
 
 def _load_steps(palette: Path) -> dict[str, Step]:
-    """The palette's step types by name, in palette order.
-
-    The palette is in TestStand's binary format, which NI doesn't document: a ``TOF1`` header,
-    then ``PMCZ`` and 4 bytes, then a zlib stream. In that stream each step type's name comes
-    first, then its properties, then the path of the VI it calls. Among the properties are two
-    quoted expressions, its default step name and then its menu name. A string the stream already
-    holds isn't stored again, so a menu name equal to the default name appears once, and a shared
-    expression such as ``"%ModuleDescription"`` only under the first step.
-    """
+    """The palette's step types by name, in palette order. The palette is in TestStand's XML or
+    binary format (Station Options > File > File Format Options)."""
     raw = palette.read_bytes()
+    if raw.lstrip(b"\xef\xbb\xbf").startswith(b"<?xml"):
+        return _load_steps_xml(palette)
+    return _load_steps_binary(palette, raw)
+
+
+def _literal(expr: str) -> str:
+    """A TestStand string expression's text: '"Nominal Connect"' -> 'Nominal Connect'."""
+    expr = expr.strip()
+    return expr[1:-1] if len(expr) > 1 and expr[0] == expr[-1] == '"' else expr
+
+
+def _load_steps_xml(palette: Path) -> dict[str, Step]:
+    """Each step type is an element named for it under ``typelist/typedef``, with its default step
+    name in ``DefaultNameFormat``, its menu name in ``Menu``'s ``ItemName`` (empty when it's the
+    default name) and its VI in ``VIPath``."""
+    root = ET.parse(palette).getroot()
+    ns = root.tag[: root.tag.index("}") + 1] if root.tag.startswith("{") else ""
+    steps: dict[str, Step] = {}
+    for typedef in root.iterfind(f"{ns}typelist/{ns}typedef"):
+        for el in typedef:
+            name = el.tag.removeprefix(ns)
+            vi_path = el.findtext(f".//{ns}VIPath/{ns}value") or ""
+            if not name.startswith("Nominal_") or not vi_path:
+                continue
+            default_name = _literal(el.findtext(f".//{ns}DefaultNameFormat/{ns}value") or "")
+            title = _literal(el.findtext(f".//{ns}Menu//{ns}ItemName/{ns}value") or "") or default_name
+            if not title:
+                logger.warning("TestStand palette: no menu name found for %s", name)
+            steps[name] = Step(name, title or _menu_fallback(name), default_name, PureWindowsPath(vi_path).name)
+    return steps
+
+
+def _load_steps_binary(palette: Path, raw: bytes) -> dict[str, Step]:
+    """TestStand's binary format, which NI doesn't document: a ``TOF1`` header, then ``PMCZ`` and
+    4 bytes, then a zlib stream. In that stream each step type's name comes first, then its
+    properties, then the path of the VI it calls. Among the properties are two quoted expressions,
+    its default step name and then its menu name. A string the stream already holds isn't stored
+    again, so a menu name equal to the default name appears once, and a shared expression such as
+    ``"%ModuleDescription"`` only under the first step.
+    """
     start = raw.find(b"PMCZ")
     if not raw.startswith(b"TOF1") or start < 0:
-        raise RuntimeError(f"{palette} isn't in the binary format _load_steps reads")
+        raise RuntimeError(f"{palette} is in neither TestStand format _load_steps reads")
     strings = [m.group().decode("ascii") for m in re.finditer(rb"[ -~]{4,}", zlib.decompress(raw[start + 8:]))]
     steps: dict[str, Step] = {}
     current: Step | None = None
