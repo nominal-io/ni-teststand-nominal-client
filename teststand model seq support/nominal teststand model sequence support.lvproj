@@ -14,7 +14,25 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="nominal teststand model sequence support.lvlib" Type="Library" URL="../nominal teststand model sequence support.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="TestStand - End Modal Dialog (Engine).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - End Modal Dialog (Engine).vi"/>
+				<Item Name="TestStand - End Modal Dialog (Private).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - End Modal Dialog (Private).vi"/>
+				<Item Name="TestStand - End Modal Dialog (Sequence Context).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - End Modal Dialog (Sequence Context).vi"/>
+				<Item Name="TestStand - End Modal Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - End Modal Dialog.vi"/>
+				<Item Name="TestStand - Start Modal Dialog (Engine).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - Start Modal Dialog (Engine).vi"/>
+				<Item Name="TestStand - Start Modal Dialog (Private).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - Start Modal Dialog (Private).vi"/>
+				<Item Name="TestStand - Start Modal Dialog (Sequence Context).vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - Start Modal Dialog (Sequence Context).vi"/>
+				<Item Name="TestStand - Start Modal Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/addons/TestStand/_TSUtility.llb/TestStand - Start Modal Dialog.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+			</Item>
+			<Item Name="user32.dll" Type="Document" URL="user32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="nominal teststand model sequence support" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -26,7 +44,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B4AEA375-E4A5-4238-91DF-2ABA7A4C1A96}</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">nominal teststand model sequence support.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../teststand public directory/Components/Models/ModelPlugins/nominal/NI_AB_PROJECTNAME.lvlibp</Property>
