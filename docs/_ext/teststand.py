@@ -515,14 +515,12 @@ class Pages:
             if name not in grouped:
                 logger.warning("TestStand reference: add %s to GROUPS in _ext/teststand.py", name)
 
-        lines = [
-            "# Reference",
-            "",
-            "{.lead}",
-            "The steps in the **Nominal Core** step group. Each one calls a VI, and that VI's inputs and "
-            "outputs are the step's parameters. The other VIs and the types in the steps' library follow.",
-            "",
-        ]
+        rest = " and ".join(part for part, items in (("the other VIs", others), ("the types", typedefs)) if items)
+        lead = ("The steps in the **Nominal Core** step group. Each one calls a VI, and that VI's inputs and "
+                "outputs are the step's parameters.")
+        if rest:
+            lead += f" {rest[0].upper()}{rest[1:]} in the steps' library follow."
+        lines = ["# Reference", "", "{.lead}", lead, ""]
         for group, names in GROUPS.items():
             lines += [f"## {group}", ""]
             for name in names:
