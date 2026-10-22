@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="20008000">
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)`!!!*Q(C=\&gt;5^EB*2&amp;-8RAW6ASAYMNH#W1'9:EJNY81,J:"+;'.QN^":Q!:&lt;?(5S2'\'&amp;^M_&lt;STB-))%@J684T90G^/P\@LT_1"L,#_GZZGO,@LK-$P.F]GD`@,(`5@?R?_[0_VK&gt;;D\8@\B?&lt;-Q`OJX$O9_8OMI6`[`]`+@F;@HPFZOL.]%@PQ]7ZXO_;%E,GO`OZ3)P]C)P]C)P]C20]C20]C20]C!0]C!0]C!0=J/&lt;X/1G.\H04R.SE9N=(A_B9P"CI+*I5;$I$%8&amp;7_%J0)7H]0"6B;@Q&amp;*\#5XDIIM*4?!J0Y3E](+&lt;#5XA+4_%J0*1;EBIL/:\#1XEFHM34?"*0YG&amp;)*:Y%E!S7&amp;%[+Q&amp;#S-^F)0)EH]&lt;#JR*.Y%E`C34TM6O**0)EH]31?$BGTEE.T7MHR5%;"*`!%HM!4?#CNQ".Y!E`A#4Q-J]!4?!*%-'"1()+#AY)/Q:@!%XDY5/!*0)%H]!1?&gt;IUT&amp;'.G4JL43I\(?)T(?)T(?#ABYT%?YT%?Y['MD-&gt;YD-&gt;YD)?B:$T'9TQ'9A:F?*FCZE$4S14'QWN=,2ZH+9@%9V8`%9U,68U"KC]M^17DPB$5*VB^YN1H2$X2[AF54YT["[N`C"KI(FB&gt;5.V22^Y0N$VNIOVI7^K'NK;N;-P4I&lt;_ZY`&amp;YV/&amp;QU([`VT2.WOVWWG[XWGQW7K`87KV77C[8^Y_"F[TX$Y3\Z^).WZ`V:P&amp;.(R;XH^[``4*^@06V?P@[F0_&amp;`_&gt;`Y.GI:XIY"H0U(=792:A!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
@@ -42,12 +43,12 @@
 	<Item Name="stream" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="batch buffer" Type="Folder">
-			<Item Name="create batch buffer.vi" Type="VI" URL="../create batch buffer.vi"/>
 			<Item Name="get channel buffer from batch buffer.vi" Type="VI" URL="../get channel buffer from batch buffer.vi"/>
 			<Item Name="add point to batch buffer.vi" Type="VI" URL="../add point to batch buffer.vi"/>
 			<Item Name="destroy batch buffer.vi" Type="VI" URL="../destroy batch buffer.vi"/>
 			<Item Name="flush batch buffer.vi" Type="VI" URL="../flush batch buffer.vi"/>
 			<Item Name="batch buffer.ctl" Type="VI" URL="../batch buffer.ctl"/>
+			<Item Name="new batch buffer.vi" Type="VI" URL="../new batch buffer.vi"/>
 		</Item>
 		<Item Name="point buffer" Type="Folder">
 			<Item Name="create point buffer.vi" Type="VI" URL="../create point buffer.vi"/>
