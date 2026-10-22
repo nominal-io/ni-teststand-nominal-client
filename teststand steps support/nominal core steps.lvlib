@@ -62,11 +62,11 @@
 			<Item Name="tags array to map.vi" Type="VI" URL="../tags array to map.vi"/>
 			<Item Name="channel uid.ctl" Type="VI" URL="../channel uid.ctl"/>
 			<Item Name="stream session.ctl" Type="VI" URL="../stream session.ctl"/>
+			<Item Name="core find or create channel in stream.vi" Type="VI" URL="../core find or create channel in stream.vi"/>
 		</Item>
 		<Item Name="find or create stream channel.vi" Type="VI" URL="../find or create stream channel.vi"/>
 		<Item Name="update channel metadata.vi" Type="VI" URL="../update channel metadata.vi"/>
 		<Item Name="stream array to channel.vi" Type="VI" URL="../stream array to channel.vi"/>
-		<Item Name="core find or create channel in stream.vi" Type="VI" URL="../core find or create channel in stream.vi"/>
 		<Item Name="stream points to channel.vi" Type="VI" URL="../stream points to channel.vi"/>
 		<Item Name="stream waveform to channel.vi" Type="VI" URL="../stream waveform to channel.vi"/>
 		<Item Name="shutdown stream.vi" Type="VI" URL="../shutdown stream.vi"/>
