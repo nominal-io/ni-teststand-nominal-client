@@ -5,6 +5,7 @@
 Publish results from your NI TestStand® sequences to Nominal. The TestStand® client offers two integration paths: ready-made test steps that wrap the Nominal LabVIEW® client, and a report model plugin that logs a sequence's `Additional Results` without changing the sequence itself.
 
 Releases and source code are on [GitHub](https://github.com/nominal-io/ni-teststand-nominal-client).
+Nominal also integrates with [LabVIEW](site:/ni/labview/), [VeriStand](site:/ni/veristand/) and [FlexLogger](site:/ni/flexlogger/).
 
 ```{toctree}
 :hidden:
