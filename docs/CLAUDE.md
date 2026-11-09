@@ -47,7 +47,7 @@ change.
 - State only what the source shows or what has been run. TestStand's own behavior, such as its
   menu labels, needs a check in TestStand before a page relies on it.
 - Link a step by name with {ts:step}`Create Point Buffer` (its menu name or step type name).
-- Link to other projects on the hub as `[text](site:/{lang}/{project}/{page}/)`, never with an
+- Link to other projects on the hub as `[text](site:/{project}/{page}/)`, never with an
   absolute URL, so the hub's offline copy works.
 - The guide marks NI's trademarks with ® and ends with a Trademarks section. Keep both.
 

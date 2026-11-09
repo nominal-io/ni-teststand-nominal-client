@@ -5,7 +5,7 @@
 Publish results from your NI TestStand® sequences to Nominal. The TestStand® client offers two integration paths: ready-made test steps that wrap the Nominal LabVIEW® client, and a report model plugin that logs a sequence's `Additional Results` without changing the sequence itself.
 
 Releases and source code are on [GitHub](https://github.com/nominal-io/ni-teststand-nominal-client).
-Nominal also integrates with [LabVIEW](site:/ni/labview/), [VeriStand](site:/ni/veristand/) and [FlexLogger](site:/ni/flexlogger/).
+Nominal also integrates with [LabVIEW](site:/ni-labview/), [VeriStand](site:/ni-veristand/) and [FlexLogger](site:/ni-flexlogger/).
 
 ```{toctree}
 :hidden:
@@ -40,11 +40,11 @@ Pick the path that matches how much control you need:
 - NI TestStand®
 - The LabVIEW® 2020 Run-Time Engine
 
-Building the steps and the plugin from source also needs LabVIEW® with the [Nominal client for LabVIEW](site:/ni/labview/).
+Building the steps and the plugin from source also needs LabVIEW® with the [Nominal client for LabVIEW](site:/ni-labview/).
 
 ## Connect to Nominal
 
-Both paths authenticate with a Nominal API key; see [API keys setup](site:/quickstart/quickstart/api-keys-setup/). Each also needs somewhere to write, which can be a [dataset RID](site:/quickstart/quickstart/quick/quick-dataset-rid/), an asset RID, or neither if you let the integration create the asset for you. See [Creating asset metadata](site:/quickstart/quickstart/quick/quick-asset/).
+Both paths authenticate with a Nominal API key; see [API keys setup](site:/quickstart/api-keys-setup/). Each also needs somewhere to write, which can be a [dataset RID](site:/quickstart/quick/quick-dataset-rid/), an asset RID, or neither if you let the integration create the asset for you. See [Creating asset metadata](site:/quickstart/quick/quick-asset/).
 
 The test steps read the API key from the station global `StationGlobals.nominal_api_key`. The report plugin uses the key in its **Nominal Core API Key** setting, or that station global when the setting is empty.
 
