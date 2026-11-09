@@ -6,7 +6,7 @@ Provides two integration options for using Nominal in NI TestStand®.
 
 The report model plugin is an alpha release and supports single-point numeric properties only. Other data types, such as waveforms, are straightforward to add but are not supported yet; use the test steps for those.
 
-The full docs are at [nominal-io.github.io/pub-docs/ni/teststand](https://nominal-io.github.io/pub-docs/ni/teststand/).
+The full docs are at [dev.nominal.io/ni-teststand](https://dev.nominal.io/ni-teststand/).
 
 ## Requirements
 The steps and model plugin depend on this VIPM package in order to build:
